@@ -1,0 +1,12 @@
+# Vite + React site. Until the app source (package.json, src/) is in the repo,
+# the fallback publishes only the static pages in public/ so deploys don't fail.
+[build]
+  command = "if [ -f package.json ]; then npm run build; else mkdir -p dist && cp -R public/. dist/; fi"
+  publish = "dist"
+
+# Single-page app: unknown paths load the React app. Existing files
+# (e.g. the order form pages) are served as-is.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
