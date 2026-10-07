@@ -1,7 +1,7 @@
 # Vite + React site. Until the app source (package.json, src/) is in the repo,
-# the fallback publishes only the static pages in public/ so deploys don't fail.
+# the fallback publishes the static homepage in fallback/ plus the pages in public/.
 [build]
-  command = "if [ -f package.json ]; then npm run build; else mkdir -p dist && cp -R public/. dist/; fi"
+  command = "if [ -f package.json ]; then npm run build; else mkdir -p dist && cp -R public/. dist/ && cp fallback/index.html dist/index.html; fi"
   publish = "dist"
 
 # Single-page app: unknown paths load the React app. Existing files

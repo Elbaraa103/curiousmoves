@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curious Moves • Ganzheitliche Förderung für Kinder in Berlin</title>
+    <meta name="description" content="Ganzheitliche Entwicklungsbegleitung für Kinder und Jugendliche in Berlin von Dilan Akbayir: Kinderyoga, spielbasierte Autismusförderung, kreatives Theater & P4C Philosophie auf Deutsch, Türkisch und Englisch." />
+    <meta name="author" content="Dilan Akbayir • Curious Moves" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#fef3c7" />
+    <link rel="canonical" href="https://curiousmoves.online/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://curiousmoves.online/" />
+    <meta property="og:title" content="Curious Moves" />
+    <meta property="og:description" content="Ganzheitliche Förderung für Kinder & Jugendliche in Berlin (TR / DE / EN). Spielbasierte Pädagogik, Yoga, Drama & P4C." />
+    <meta property="og:locale" content="de_DE" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Curious Moves Berlin",
+      "founder": { "@type": "Person", "name": "Dilan Akbayir", "jobTitle": "Sozialpädagogische Fachkraft & Kinderyogalehrerin" },
+      "url": "https://curiousmoves.online",
+      "telephone": "+4917661348348",
+      "email": "dilanakbayir5@gmail.com",
+      "address": { "@type": "PostalAddress", "streetAddress": "Kattegatstr 7", "postalCode": "13359", "addressLocality": "Berlin", "addressCountry": "DE" },
+      "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00" },
+      "knowsLanguage": ["de", "tr", "en"],
+      "areaServed": "Berlin"
+    }
+    </script>
+    <style>
+      :root {
+        --ink: #1e293b; --muted: #64748b; --paper: #fffbeb; --line: #fde68a;
+        --amber: #f59e0b; --amber-dark: #b45309; --rose: #fb7185; --sky: #38bdf8; --leaf: #4ade80; --lilac: #a78bfa;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0; font-family: Nunito, system-ui, sans-serif; color: var(--ink); line-height: 1.6;
+        background-color: var(--paper);
+        background-image: radial-gradient(#fcd34d55 1px, transparent 1px);
+        background-size: 22px 22px;
+      }
+      a { color: var(--amber-dark); }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
+
+      header { padding: 1.25rem 0; }
+      .bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+      .logo { font-family: Caveat, cursive; font-size: 2rem; font-weight: 700; text-decoration: none; color: var(--ink); }
+      .logo span { color: var(--amber); }
+      .langs { display: flex; gap: .35rem; background: #fff; border: 2px solid var(--line); border-radius: 999px; padding: .25rem; }
+      .langs button { font: inherit; font-weight: 800; font-size: .8rem; border: 0; background: none; border-radius: 999px; padding: .35rem .7rem; cursor: pointer; color: var(--muted); }
+      .langs button[aria-pressed="true"] { background: var(--amber); color: #fff; }
+
+      .hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.5rem; align-items: center; padding: 3rem 0 4rem; }
+      .tag { font-family: "Patrick Hand", cursive; font-size: 1.2rem; color: var(--amber-dark); margin: 0; transform: rotate(-1.5deg); display: inline-block; }
+      h1 { font-family: Caveat, cursive; font-size: clamp(3rem, 8vw, 5.2rem); line-height: .95; margin: .4rem 0 1.2rem; }
+      h1 em { font-style: normal; color: var(--amber); position: relative; white-space: nowrap; }
+      h1 em::after { content: ""; position: absolute; left: 0; right: 0; bottom: .05em; height: .18em; background: #fcd34d; z-index: -1; border-radius: 99px; transform: rotate(-1deg); }
+      .lead { font-size: 1.15rem; color: #475569; max-width: 34rem; margin: 0 0 2rem; }
+      .cta { display: inline-block; font-weight: 800; background: var(--amber); color: #fff; text-decoration: none; border-radius: 999px; padding: .9rem 1.8rem; box-shadow: 0 6px 0 var(--amber-dark); transition: transform .15s, box-shadow .15s; }
+      .cta:hover { transform: translateY(3px); box-shadow: 0 3px 0 var(--amber-dark); }
+      .langnote { margin-top: 1.2rem; font-family: "Patrick Hand", cursive; font-size: 1.1rem; color: var(--muted); }
+
+      .doodle { position: relative; aspect-ratio: 1; }
+      .blob { position: absolute; border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%; animation: float 7s ease-in-out infinite; }
+      .b1 { inset: 8% 14% 20% 6%; background: #fde68a; }
+      .b2 { width: 34%; height: 34%; right: 4%; top: 6%; background: #fecdd3; animation-delay: -2s; }
+      .b3 { width: 28%; height: 28%; left: 8%; bottom: 4%; background: #bae6fd; animation-delay: -4s; }
+      .doodle .quote { position: absolute; inset: 24% 18% 30% 16%; display: grid; place-items: center; text-align: center; font-family: Caveat, cursive; font-size: clamp(1.6rem, 3.4vw, 2.3rem); line-height: 1.1; transform: rotate(-3deg); }
+      @keyframes float { 50% { transform: translateY(-10px) rotate(3deg); } }
+      @media (prefers-reduced-motion: reduce) { .blob { animation: none; } html { scroll-behavior: auto; } }
+
+      section { padding: 3.5rem 0; }
+      h2 { font-family: Caveat, cursive; font-size: clamp(2.3rem, 5vw, 3.2rem); line-height: 1; margin: 0 0 .6rem; }
+      .sub { color: var(--muted); margin: 0 0 2.2rem; max-width: 40rem; }
+      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.25rem; }
+      .card { background: #fff; border: 2px solid var(--ink); border-radius: 1.1rem; padding: 1.5rem; box-shadow: 5px 5px 0 var(--c, var(--amber)); transition: transform .2s; }
+      .card:nth-child(odd) { transform: rotate(-.6deg); }
+      .card:nth-child(even) { transform: rotate(.6deg); }
+      .card:hover { transform: rotate(0) translateY(-4px); }
+      .card .ico { font-size: 1.8rem; width: 3rem; height: 3rem; display: grid; place-items: center; border-radius: 50%; background: var(--c, var(--amber)); margin-bottom: .8rem; }
+      .card h3 { margin: 0 0 .4rem; font-size: 1.15rem; font-weight: 900; }
+      .card p { margin: 0; color: #475569; font-size: .95rem; }
+
+      .about { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: center; background: #fff; border: 2px solid var(--line); border-radius: 1.5rem; padding: 2rem; }
+      .avatar { width: 120px; height: 120px; border-radius: 50%; background: #fde68a; display: grid; place-items: center; font-family: Caveat, cursive; font-size: 3rem; font-weight: 700; color: var(--amber-dark); border: 3px dashed var(--amber); }
+      .about h2 { font-size: 2.4rem; }
+      .about .role { font-weight: 800; color: var(--amber-dark); margin: 0 0 .6rem; }
+      .about p { margin: 0; }
+
+      .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+      .contact div { background: #fff; border: 2px solid var(--line); border-radius: 1rem; padding: 1.2rem 1.4rem; }
+      .contact strong { display: block; font-family: "Patrick Hand", cursive; font-size: 1.2rem; font-weight: 400; color: var(--amber-dark); }
+      footer { padding: 2.5rem 0; text-align: center; color: var(--muted); font-size: .9rem; }
+
+      @media (max-width: 760px) {
+        .hero { grid-template-columns: 1fr; padding-top: 1.5rem; }
+        .doodle { max-width: 320px; margin: 0 auto; width: 100%; }
+        .about { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrap">
+      <div class="bar">
+        <a class="logo" href="/">Curious <span>Moves</span></a>
+        <div class="langs" role="group" aria-label="Sprache / Dil / Language">
+          <button type="button" data-lang="de" aria-pressed="true">DE</button>
+          <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap hero">
+        <div>
+          <p class="tag" data-i18n="tag">Berlin • Kinder & Jugendliche</p>
+          <h1 data-i18n-html="title">Neugierig <em>bewegen</em>, gemeinsam wachsen.</h1>
+          <p class="lead" data-i18n="lead">Ganzheitliche Entwicklungsbegleitung für Kinder und Jugendliche: Kinderyoga, spielbasierte Autismusförderung, kreatives Theater und Philosophieren mit Kindern.</p>
+          <a class="cta" href="#kontakt" data-i18n="cta">Kontakt aufnehmen</a>
+          <p class="langnote" data-i18n="langnote">Auf Deutsch, Türkisch und Englisch.</p>
+        </div>
+        <div class="doodle" aria-hidden="true">
+          <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+          <div class="quote" data-i18n="quote">Jedes Kind bewegt sich auf seine Weise.</div>
+        </div>
+      </div>
+
+      <section id="angebote">
+        <div class="wrap">
+          <h2 data-i18n="offersTitle">Angebote</h2>
+          <p class="sub" data-i18n="offersSub">Spielerisch, achtsam und individuell, abgestimmt auf die Bedürfnisse jedes Kindes.</p>
+          <div class="cards">
+            <article class="card" style="--c:#fde68a"><div class="ico">🧘</div><h3 data-i18n="o1t">Kinderyoga</h3><p data-i18n="o1d">Bewegung, Atmung und Achtsamkeit mit Geschichten und Spielen, für Körpergefühl und innere Ruhe.</p></article>
+            <article class="card" style="--c:#fecdd3"><div class="ico">🧩</div><h3 data-i18n="o2t">Autismusförderung</h3><p data-i18n="o2d">Spielbasierte Einzelförderung mit Fokus auf Co-Regulation, Beziehung und Kommunikation.</p></article>
+            <article class="card" style="--c:#bae6fd"><div class="ico">🎭</div><h3 data-i18n="o3t">Kreatives Theater</h3><p data-i18n="o3d">Drama und Rollenspiel stärken Ausdruck, Selbstvertrauen und Empathie.</p></article>
+            <article class="card" style="--c:#ddd6fe"><div class="ico">💭</div><h3 data-i18n="o4t">P4C – Philosophieren</h3><p data-i18n="o4d">Philosophy for Children: gemeinsam staunen, fragen und eigene Gedanken entwickeln.</p></article>
+            <article class="card" style="--c:#bbf7d0"><div class="ico">🗣️</div><h3 data-i18n="o5t">Türkisch für Mehrsprachige</h3><p data-i18n="o5d">Spielerische Förderung der türkischen Sprache für zweisprachig aufwachsende Kinder.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ueber">
+        <div class="wrap">
+          <div class="about">
+            <div class="avatar" aria-hidden="true">DA</div>
+            <div>
+              <h2>Dilan Akbayir</h2>
+              <p class="role" data-i18n="role">Sozialpädagogische Fachkraft & Kinderyogalehrerin</p>
+              <p data-i18n="aboutText">Mit Curious Moves begleite ich Kinder und Jugendliche in Berlin ganzheitlich in ihrer Entwicklung, mit Bewegung, Spiel, Kreativität und viel Neugier.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt">
+        <div class="wrap">
+          <h2 data-i18n="contactTitle">Kontakt</h2>
+          <p class="sub" data-i18n="contactSub">Ich freue mich auf Ihre Nachricht.</p>
+          <div class="contact">
+            <div><strong data-i18n="email">E-Mail</strong><a href="mailto:dilanakbayir5@gmail.com">dilanakbayir5@gmail.com</a></div>
+            <div><strong data-i18n="phone">Telefon</strong><a href="tel:+4917661348348">+49 176 61348348</a></div>
+            <div><strong data-i18n="address">Adresse</strong>Kattegatstr 7, 13359 Berlin</div>
+            <div><strong data-i18n="hours">Zeiten</strong><span data-i18n="hoursText">Mo – Sa, 9:00 – 19:00</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">© <span id="year"></span> Curious Moves • Dilan Akbayir • Berlin</footer>
+
+    <script>
+      const i18n = {
+        tr: {
+          tag: "Berlin • Çocuklar & Gençler",
+          title: "Merakla <em>hareket et</em>, birlikte büyü.",
+          lead: "Çocuklar ve gençler için bütüncül gelişim desteği: çocuk yogası, oyun temelli otizm desteği, yaratıcı drama ve çocuklarla felsefe.",
+          cta: "İletişime geç",
+          langnote: "Almanca, Türkçe ve İngilizce.",
+          quote: "Her çocuk kendi yolunda hareket eder.",
+          offersTitle: "Hizmetler",
+          offersSub: "Oyunlu, farkındalıklı ve bireysel; her çocuğun ihtiyacına göre.",
+          o1t: "Çocuk Yogası", o1d: "Hikâyeler ve oyunlarla hareket, nefes ve farkındalık; beden algısı ve iç huzur için.",
+          o2t: "Otizm Desteği", o2d: "Ortak düzenleme, ilişki ve iletişime odaklanan oyun temelli bireysel destek.",
+          o3t: "Yaratıcı Drama", o3d: "Drama ve rol oyunlarıyla ifade, özgüven ve empati gelişir.",
+          o4t: "P4C – Çocuklarla Felsefe", o4d: "Philosophy for Children: birlikte hayret etmek, sormak ve kendi düşüncelerini geliştirmek.",
+          o5t: "Çok Dilliler için Türkçe", o5d: "İki dilli büyüyen çocuklar için oyunla Türkçe desteği.",
+          role: "Sosyal pedagog & çocuk yogası eğitmeni",
+          aboutText: "Curious Moves ile Berlin'de çocuklara ve gençlere hareket, oyun, yaratıcılık ve bolca merakla bütüncül gelişimlerinde eşlik ediyorum.",
+          contactTitle: "İletişim", contactSub: "Mesajınızı bekliyorum.",
+          email: "E-posta", phone: "Telefon", address: "Adres", hours: "Saatler", hoursText: "Pzt – Cmt, 9:00 – 19:00"
+        },
+        en: {
+          tag: "Berlin • Children & Teens",
+          title: "Move with <em>curiosity</em>, grow together.",
+          lead: "Holistic developmental support for children and teens: kids yoga, play-based autism support, creative drama and philosophy for children.",
+          cta: "Get in touch",
+          langnote: "In German, Turkish and English.",
+          quote: "Every child moves in their own way.",
+          offersTitle: "Offers",
+          offersSub: "Playful, mindful and individual, tailored to each child's needs.",
+          o1t: "Kids Yoga", o1d: "Movement, breathing and mindfulness through stories and games, for body awareness and inner calm.",
+          o2t: "Autism Support", o2d: "Play-based one-to-one support focused on co-regulation, connection and communication.",
+          o3t: "Creative Drama", o3d: "Drama and role play build expression, confidence and empathy.",
+          o4t: "P4C – Philosophy for Children", o4d: "Wondering, asking questions and developing their own thoughts together.",
+          o5t: "Turkish for Multilinguals", o5d: "Playful Turkish language support for children growing up bilingual.",
+          role: "Social education professional & kids yoga teacher",
+          aboutText: "With Curious Moves I support children and teens in Berlin holistically in their development, through movement, play, creativity and lots of curiosity.",
+          contactTitle: "Contact", contactSub: "I look forward to hearing from you.",
+          email: "Email", phone: "Phone", address: "Address", hours: "Hours", hoursText: "Mon – Sat, 9:00 – 19:00"
+        }
+      };
+      const nodes = [...document.querySelectorAll("[data-i18n],[data-i18n-html]")];
+      const de = {};
+      nodes.forEach(n => { de[n.dataset.i18n || n.dataset.i18nHtml] = n.dataset.i18nHtml ? n.innerHTML : n.textContent; });
+      i18n.de = de;
+
+      function setLang(lang) {
+        const dict = i18n[lang] || de;
+        nodes.forEach(n => {
+          const key = n.dataset.i18n || n.dataset.i18nHtml;
+          if (dict[key] == null) return;
+          if (n.dataset.i18nHtml) n.innerHTML = dict[key]; else n.textContent = dict[key];
+        });
+        document.documentElement.lang = lang;
+        document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+      }
+      document.querySelectorAll(".langs button").forEach(b => b.addEventListener("click", () => {
+        setLang(b.dataset.lang);
+        const url = new URL(location); url.searchParams.set("lang", b.dataset.lang); history.replaceState(null, "", url);
+      }));
+      setLang(new URLSearchParams(location.search).get("lang") || "de");
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
